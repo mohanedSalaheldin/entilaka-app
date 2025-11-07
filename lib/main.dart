@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
+var pattern =
+    'https://res.cloudinary.com/dwaxkyuva/image/upload/v1762555873/pattern_svyoyk.png';
+
 // شاشة التسجيل (Register)
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -36,7 +39,7 @@ class RegisterScreen extends StatelessWidget {
                   children: [
                     const SizedBox(height: 40),
                     Image.network(
-                      'https://github.com/mohanedSalaheldin/entilaka-app/blob/main/assets/images/pattern.PNG?raw=true',
+                      pattern,
                       height: 100,
                     ),
                     const SizedBox(height: 20),
@@ -53,7 +56,7 @@ class RegisterScreen extends StatelessWidget {
                   width: 90,
                   color: Colors.transparent,
                   child: Image.network(
-                    'https://github.com/mohanedSalaheldin/entilaka-app/blob/main/assets/images/pattern.PNG?raw=true',
+                    pattern,
                     fit: BoxFit.cover,
                     height: double.infinity,
                     repeat: ImageRepeat.repeatY,
@@ -183,7 +186,7 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.05,
                   child: Image.network(
-                    'https://github.com/mohanedSalaheldin/entilaka-app/blob/main/assets/images/pattern.PNG?raw=true',
+                    pattern,
                     fit: BoxFit.cover,
                     height: double.infinity,
                     repeat: ImageRepeat.repeatY,
@@ -210,12 +213,12 @@ class LoginScreen extends StatelessWidget {
   }
 
   Widget _buildForm() {
+    var logo =
+        'https://res.cloudinary.com/dwaxkyuva/image/upload/v1762555873/ent_logo_mtiqjv.png';
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.network(
-            'https://github.com/mohanedSalaheldin/entilaka-app/blob/main/assets/images/ent_logo.PNG?raw=true',
-            height: 80),
+        Image.network(logo, height: 80),
         const SizedBox(height: 30),
         _buildTextField(label: "اسم المستخدم"),
         const SizedBox(height: 20),
