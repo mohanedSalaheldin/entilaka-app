@@ -35,7 +35,7 @@ class RegisterScreen extends StatelessWidget {
                   children: [
                     const SizedBox(height: 40),
                     Image.asset(
-                      'images/pattern.png',
+                      'assets/images/pattern.png',
                       height: 100,
                     ),
                     const SizedBox(height: 20),
@@ -52,7 +52,7 @@ class RegisterScreen extends StatelessWidget {
                   width: 90,
                   color: Colors.transparent,
                   child: Image.asset(
-                    'images/pattern.png',
+                    'assets/images/pattern.png',
                     fit: BoxFit.cover,
                     height: double.infinity,
                     repeat: ImageRepeat.repeatY,
@@ -182,7 +182,7 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.05,
                   child: Image.asset(
-                    'images/pattern.png',
+                    'assets/images/pattern.png',
                     fit: BoxFit.cover,
                     height: double.infinity,
                     repeat: ImageRepeat.repeatY,
@@ -212,7 +212,7 @@ class LoginScreen extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset('images/ent_logo.png', height: 80),
+        Image.asset('assets/images/ent_logo.png', height: 80),
         const SizedBox(height: 30),
         _buildTextField(label: "اسم المستخدم"),
         const SizedBox(height: 20),
