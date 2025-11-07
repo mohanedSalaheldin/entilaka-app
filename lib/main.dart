@@ -35,7 +35,7 @@ class RegisterScreen extends StatelessWidget {
                   children: [
                     const SizedBox(height: 40),
                     Image.asset(
-                      'assets/patterns/left_pattern.png',
+                      'images/pattern.png',
                       height: 100,
                     ),
                     const SizedBox(height: 20),
@@ -52,7 +52,7 @@ class RegisterScreen extends StatelessWidget {
                   width: 90,
                   color: Colors.transparent,
                   child: Image.asset(
-                    'assets/patterns/left_pattern.png',
+                    'images/pattern.png',
                     fit: BoxFit.cover,
                     height: double.infinity,
                     repeat: ImageRepeat.repeatY,
